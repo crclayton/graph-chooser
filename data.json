@@ -1,0 +1,290 @@
+{
+  "name": "Start",
+  "children": [
+    {
+      "name": "One",
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "Gauge"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Two",
+      "children": [
+        {
+          "name": "Both categorical",
+          "children": [
+            {
+              "children": [
+                {
+                  "name": ""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Both numerical",
+          "children": [
+            {
+              "name": "Both discrete",
+              "children": [
+                {
+                  "name": "Scatter plot"
+                }
+              ]
+            },
+            {
+              "name": "One discrete, one continuous",
+              "children": [
+                {
+                  "name": "Line chart"
+                },
+                {
+                  "name": "Area chart"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "One categorical, one numerical",
+          "children": [
+            {
+              "name": "Discrete",
+              "children": [
+                {
+                  "name": "Bar chart"
+                },
+                {
+                  "name": "Cleveland dot plot"
+                },
+                {
+                  "name": "Pi chart"
+                }
+              ]
+            },
+            {
+              "name": "Continuous",
+              "children": [
+                {
+                  "name": "Waterfall chart"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Three",
+      "children": [
+        {
+          "name": "All numerical",
+          "children": [
+            {
+              "name": "Discrete",
+              "children": [
+                {
+                  "name": "Bubble chart"
+                },
+                {
+                  "name": "Color-coded scatter plot (spectrum)"
+                },
+                {
+                  "name": "3D scatter chart"
+                }
+              ]
+            },
+            {
+              "name": "Continuous",
+              "children": [
+                {
+                  "name": "3D surface chart"
+                },
+                {
+                  "name": "Heat map"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Two numerical, one categorical",
+          "children": [
+            {
+              "name": "Discrete",
+              "children": [
+                {
+                  "name": "Color-coded scatter plot (categories)"
+                },
+                {
+                  "name": "Column range chart"
+                },
+                {
+                  "name": "Variable width column chart"
+                }
+              ]
+            },
+            {
+              "name": "Continuous",
+              "children": [
+                {
+                  "name": "3D area chart"
+                },
+                {
+                  "name": "Multi-line graph"
+                },
+                {
+                  "name": "Stacked area chart"
+                },
+                {
+                  "name": "Percentage stacked area chart"
+                },
+                {
+                  "name": "Ribbon plot"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Two categorical, one numerical",
+          "children": [
+            {
+              "name": "Many categories",
+              "children": [
+                {
+                  "name": "Heat map chart (spectrum)"
+                },
+                {
+                  "name": "Mosaic chart"
+                },
+                {
+                  "name": "Punch card"
+                }
+              ]
+            },
+            {
+              "name": "Few categories",
+              "children": [
+                {
+                  "name": "3D column chart"
+                },
+                {
+                  "name": "Grouped column chart"
+                },
+                {
+                  "name": "Stacked column chart"
+                },
+                {
+                  "name": "Color-coded cleveland dot plot"
+                },
+                {
+                  "name": "Sankey diagram",
+                  "link": "https://jsfiddle.net/crclayton/0kwsu9ew/4/"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "All categorical",
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "Heat map chart (categories)"
+                },
+                {
+                  "name": "Comparison table"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Four",
+      "children": [
+        {
+          "name": "Three numerical, one categorical",
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "Color-coded 3D scatter chart (categories)"
+                },
+                {
+                  "name": "Color-coded bubble chart"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Three categorical, one numerical",
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "Stacked and grouped bar chart"
+                },
+                {
+                  "name": "Mosaic chart (3 axes)"
+                },
+                {
+                  "name": "Parallel sets"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Four numerical",
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "3D bubble chart"
+                },
+                {
+                  "name": "Color-coded 3D scatter chart (spectrum)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Many",
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "name": "Parallel coordinates"
+                },
+                {
+                  "name": "Small multiples of the above graphs"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
