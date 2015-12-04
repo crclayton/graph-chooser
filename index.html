@@ -71,32 +71,11 @@
     var diagonal = d3.svg.diagonal()
         .projection(function(d) { return [d.y, d.x]; });
 
-    var hdr = d3.select("#graphic").append("svg")
+			var hdr = d3.select("#graphic").append("svg")
         .attr("width", width)
         .attr("height", 20)
       .append("g")
         .attr("transform", "translate(30,10)");
-    
-    hdr.append("text")
-        .text("How many variables?")
-        .attr("class","fork")
-        .attr("x",150);
-    
-     hdr.append("text")
-        .text("Numerical or categorical?")
-        .attr("class","fork")
-        .attr("x",350);
-    
-     hdr.append("text")
-        .text("Numerical: Continuous or discrete?")
-        .attr("class","fork")
-        .attr("x",550);
-    
-     hdr.append("text")
-        .text("Categorical: Ordinal or nominal?")
-        .attr("class","fork")
-        .attr("x",760);
-    
     
         var svg = d3.select("#graphic").append("svg")
         .attr("width", width)
@@ -141,24 +120,32 @@
 		
 		var endNodes = node.filter(function(d){ return d.children == null;});
 		
-		endNodes
-		.on("mouseover", function(d){
+		endNodes.on("mouseover", function(d){
             var url = "img/" + d.name + ".png";
             if(imageExists(url)){
                 this.childNodes[1].style.fontWeight = "bold";
                 tooltip.attr("src",url)
                 tooltip.style("visibility", "visible");
             }
-          })
-      	.on("mouseout", function(){
+          }).on("mouseout", function(){
               this.childNodes[1].style.fontWeight = "normal";
 			  tooltip.attr("src",""); // prevents seeing the old img if new one hasn't loaded yet
               return tooltip.style("visibility", "hidden");
           });
       
 
-    });
-    
+			["How many variables?", "Numerical or categorical?", 
+			"Discrete or continuous?", "Ordinal or nominal?"]
+			.forEach(function(d,i){
+				hdr.append("text")
+				.text(d)
+				.attr("class", "fork")
+				.attr("x", 120 + i*155);
+			});
+			
+        
+		});
+		
       d3.select(self.frameElement).style("height", height + "px");
   </script>
 </body>

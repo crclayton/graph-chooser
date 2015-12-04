@@ -8,9 +8,13 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Gauge"
                 }
+				]
+				}
               ]
             }
           ]
@@ -25,9 +29,13 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": ""
                 }
+				]
+				}
               ]
             }
           ]
@@ -38,20 +46,40 @@
             {
               "name": "Both discrete",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Scatter plot"
                 }
+				]
+				}
               ]
             },
-            {
+			 {
+              "name": "Both continuous",
+              "children": [
+			  {
+				"children":[
+                {
+				"name":""
+                }
+				]
+				}
+              ]
+            },
+			            {
               "name": "One discrete, one continuous",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Line chart"
                 },
                 {
                   "name": "Area chart"
                 }
+				]
+				}
               ]
             }
           ]
@@ -62,6 +90,9 @@
             {
               "name": "Discrete",
               "children": [
+			  {
+				"children":[
+
                 {
                   "name": "Bar chart"
                 },
@@ -71,14 +102,20 @@
                 {
                   "name": "Pi chart"
                 }
+				]
+				}
               ]
             },
             {
               "name": "Continuous",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Waterfall chart"
                 }
+				]
+				}
               ]
             }
           ]
@@ -92,8 +129,10 @@
           "name": "All numerical",
           "children": [
             {
-              "name": "Discrete",
+              "name": "All discrete",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Bubble chart"
                 },
@@ -103,27 +142,46 @@
                 {
                   "name": "3D scatter chart"
                 }
+				]
+				}
               ]
             },
             {
-              "name": "Continuous",
+              "name": "All continuous",
               "children": [
+			  {
+				"children":[
+				
                 {
                   "name": "3D surface chart"
                 },
                 {
                   "name": "Heat map"
                 }
+				]
+				}
               ]
-            }
+            },
+			{
+				"name": "Two continuous, one dicrete",
+				 "children": [{"children":[{"children":[]}]}]
+			},
+			{
+				"name": "Two discrete, one continuous",
+								 "children": [{"children":[{"children":[]}]}]
+
+			}
+
           ]
         },
         {
           "name": "Two numerical, one categorical",
           "children": [
             {
-              "name": "Discrete",
+              "name": "Both discrete",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Color-coded scatter plot (categories)"
                 },
@@ -133,11 +191,15 @@
                 {
                   "name": "Variable width column chart"
                 }
+				]
+				}
               ]
             },
             {
-              "name": "Continuous",
+              "name": "One discrete, one continuous",
               "children": [
+			  {
+				"children":[
                 {
                   "name": "3D area chart"
                 },
@@ -153,6 +215,8 @@
                 {
                   "name": "Ribbon plot"
                 }
+				]
+				}
               ]
             }
           ]
@@ -161,8 +225,10 @@
           "name": "Two categorical, one numerical",
           "children": [
             {
-              "name": "Many categories",
               "children": [
+			  {
+				"children":[
+			 
                 {
                   "name": "Heat map chart (spectrum)"
                 },
@@ -171,12 +237,7 @@
                 },
                 {
                   "name": "Punch card"
-                }
-              ]
-            },
-            {
-              "name": "Few categories",
-              "children": [
+                },
                 {
                   "name": "3D column chart"
                 },
@@ -193,6 +254,8 @@
                   "name": "Sankey diagram",
                   "link": "https://jsfiddle.net/crclayton/0kwsu9ew/4/"
                 }
+				]
+				}
               ]
             }
           ]
@@ -202,12 +265,16 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Heat map chart (categories)"
                 },
                 {
                   "name": "Comparison table"
                 }
+				]
+				}
               ]
             }
           ]
@@ -222,12 +289,16 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Color-coded 3D scatter chart (categories)"
                 },
                 {
                   "name": "Color-coded bubble chart"
                 }
+				]
+				}
               ]
             }
           ]
@@ -237,6 +308,8 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Stacked and grouped bar chart"
                 },
@@ -247,6 +320,8 @@
                   "name": "Parallel sets"
                 }
               ]
+			  }
+			  ]
             }
           ]
         },
@@ -255,6 +330,8 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "3D bubble chart"
                 },
@@ -262,6 +339,8 @@
                   "name": "Color-coded 3D scatter chart (spectrum)"
                 }
               ]
+			  }
+			  ]
             }
           ]
         }
@@ -274,12 +353,16 @@
           "children": [
             {
               "children": [
+			  {
+				"children":[
                 {
                   "name": "Parallel coordinates"
                 },
                 {
                   "name": "Small multiples of the above graphs"
                 }
+				]
+				}
               ]
             }
           ]
