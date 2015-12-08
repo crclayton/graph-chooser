@@ -2,6 +2,10 @@
 
 ##### A treemap to guide what graph to use based on what variables you have
 
+[Live (unsynchronized) version here](crclayton.com/projects/graph-chooser/index.html)
+
+![Example](Example.png)
+
 ## Background
 
 I'm working on a guide of what graph to use to plot your data. I'm not a statistician so I get confused when reading guides for what graphs to pick made my statisticans. They're all about intent. "What information specifically do you want to extract from the data?", "What message are you trying to convey?", "Are you looking for a relationship or a composition?", etc. 
@@ -44,10 +48,6 @@ But I rearrange that table, with the exact same data, and suddenly it has three 
 
 The difference here is between [**wide and narrow**](https://en.wikipedia.org/wiki/Wide_and_narrow_data) data. For the purposes of this guide, everything will be in regards to the **narrow** structure (called **long** in R).
 
-
-[Live (unsynchronized) version here](crclayton.com/projects/graph-chooser/index.html)
-
-![Example](Example.png)
 
 ## Example Images
 
