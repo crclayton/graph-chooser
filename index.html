@@ -36,7 +36,25 @@
       top: 10px;
       box-shadow: 5px 5px 5px 5px #888888;
     }
-    
+
+	table {
+    border-collapse: collapse;
+	font: 12px sans-serif;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+tr:nth-child(1){
+    background-color: #4CAF50;
+    color: white;
+	font-weight:bold;
+}
+	
     #graphic {
       margin: 20px;
     }
@@ -47,6 +65,7 @@
 <body>
 
   <div id="graphic"></div>
+  <table id="exampleData"></table>
 
   <script>
     function imageExists(image_url){
@@ -56,8 +75,9 @@
       return http.status != 404;
     }
     
-    var width = 1000,
-        height = 550;
+    var width = 1100,
+        height = 550,
+		margin = 250;
     
     var tooltip = d3.select("body")
     	.append("img")
@@ -66,7 +86,7 @@
     	.style("visibility", "hidden")
       
     var tree = d3.layout.tree()
-        .size([height, width - 200]);
+        .size([height, width - margin]);
     
     var diagonal = d3.svg.diagonal()
         .projection(function(d) { return [d.y, d.x]; });
@@ -127,6 +147,34 @@
                 tooltip.attr("src",url)
                 tooltip.style("visibility", "visible");
             }
+			
+			d3.select("#exampleData").html("");
+			
+			
+			if(d.parent.example != null){
+			
+			
+				var tr = d3.select("#exampleData")
+					.selectAll("tr")  
+					.data(d.parent.example)
+					.enter()
+					.append("tr");
+
+				tr.selectAll("td")
+						.data(function(d) {return d; })
+						.enter()
+						.append("td")
+						.text(function(d) {return d;});
+				
+				/*
+				d3.select("#exampleData")
+					.text(JSON.stringify(d.example)
+						.replace(/,\[/g,",\n  [")
+						.replace("[[","[\n  [")
+						.replace("]]","]\n]")
+					);
+				*/
+			}
           }).on("mouseout", function(){
               this.childNodes[1].style.fontWeight = "normal";
 			  tooltip.attr("src",""); // prevents seeing the old img if new one hasn't loaded yet
@@ -135,12 +183,12 @@
       
 
 			["How many variables?", "Numerical or categorical?", 
-			"Discrete or continuous?", "Ordinal or nominal?"]
+			"Discrete or continuous?", "Ordinal or nominal?", "Recommended graphs"]
 			.forEach(function(d,i){
 				hdr.append("text")
 				.text(d)
 				.attr("class", "fork")
-				.attr("x", 120 + i*155);
+				.attr("x", margin/2 + (width-margin)/5 * i);
 			});
 			
         
