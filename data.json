@@ -93,19 +93,24 @@
             {
               "children": [
                 {
-				"example": [["letter","number"],["a",3],["b",5],["c",6]],
+					"name":"Nominal",
+					"example": [["letter","number"],["a",3],["b",5],["c",6]],
                   "children": [
                     {
                       "name": "Bar chart"
                     },
+					                    {
+                      "name": "Waterfall chart"
+                    }]
+					},
+					{
+						"name":"Ordinal",
+						"children":[
                     {
                       "name": "Cleveland dot plot"
                     },
                     {
                       "name": "Pi chart"
-                    },
-                    {
-                      "name": "Waterfall chart"
                     }
                   ]
                 }
@@ -208,11 +213,10 @@
               "name": "One discrete, one continuous",
               "children": [
                 {
+				"name":	"Ordinal",
 				  "example": [["letter","x","y"],["a",1,2],["b",2,5],["c",3,4]],
                   "children": [
-                    {
-                      "name": "3D area chart"
-                    },
+ 
                     {
                       "name": "Multi-line graph"
                     },
@@ -221,9 +225,17 @@
                     },
                     {
                       "name": "Percentage stacked area chart"
-                    },
+					}
+					]
+					},
+					{
+						"name":"Nominal",
+						"children":[
                     {
                       "name": "Ribbon plot"
+                    },
+					  {
+                      "name": "3D area chart"
                     }
                   ]
                 }
@@ -237,26 +249,37 @@
             {
               "children": [
                 {
+				  "name":"Both ordinal",
 				  "example": [["letter","note","y"],["a","do",2],["b","re",5],["c","mi",4]],
                   "children": [
                     {
                       "name": "Heat map chart (spectrum)"
                     },
                     {
-                      "name": "Mosaic chart (2 axes)"
-                    },
-                    {
                       "name": "Punch card"
                     },
                     {
                       "name": "3D column chart"
-                    },
+                    }
+					]
+					},
+				{
+					"name":"One ordinal, one nominal",
+					"children":[
                     {
                       "name": "Grouped column chart"
                     },
                     {
                       "name": "Stacked column chart"
                     },
+					                {
+                      "name": "Mosaic chart (2 axes)"
+                    }
+					]
+					},
+					{
+						"name":"Both nominal",
+						"children":[
                     {
                       "name": "Color-coded cleveland dot plot"
                     },
